@@ -1,0 +1,15 @@
+{
+  "bpm": 128,
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "totalBeats": 52,
+  "sections": {
+    "intro": [0, 8],
+    "name": [8, 16],
+    "topics": [16, 32],
+    "slogan": [32, 36],
+    "hype": [36, 40],
+    "outro": [40, 52]
+  }
+}

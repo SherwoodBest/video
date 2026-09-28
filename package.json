@@ -1,0 +1,27 @@
+{
+  "name": "channel-intro-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dynamic, beat-synced YouTube channel intro built with Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render ChannelIntro out/channel-intro.mp4",
+    "still": "remotion still ChannelIntro out/still.png --frame=250",
+    "music": "python3 scripts/make_soundtrack.py",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/noto-sans-sc": "5.3.0",
+    "@remotion/cli": "4.0.529",
+    "@remotion/fonts": "4.0.529",
+    "@remotion/layout-utils": "4.0.529",
+    "@remotion/noise": "4.0.529",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "typescript": "5.9.3"
+  }
+}
