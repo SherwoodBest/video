@@ -3,3 +3,4 @@ node_modules/
 out/*.png
 out/frames/
 *.log
+__pycache__/
