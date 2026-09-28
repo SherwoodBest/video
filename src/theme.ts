@@ -1,17 +1,23 @@
 import '@fontsource-variable/noto-sans-sc';
+import '@fontsource-variable/noto-serif-sc';
+import '@fontsource-variable/newsreader/opsz.css';
+import '@fontsource-variable/newsreader/opsz-italic.css';
 import type React from 'react';
 import {loadFont} from '@remotion/fonts';
 import {staticFile} from 'remotion';
 
 export {COLORS} from './config';
 
-/** Chinese glyphs fall back to Noto Sans SC (variable weight, loaded on demand per character). */
+/** Chinese glyphs fall back to Noto Sans/Serif SC (variable weight, loaded on demand per character). */
 const CJK = 'Noto Sans SC Variable';
+const CJK_SERIF = 'Noto Serif SC Variable';
+const SERIF = 'Newsreader Variable';
 
 export const FONT = {
   display: `Anton, '${CJK}'`,
   ui: `Inter, '${CJK}'`,
   mono: `'JetBrains Mono', '${CJK}'`,
+  serif: `'${SERIF}', '${CJK_SERIF}'`,
 };
 
 /** Big headline style. Weight 900 makes the Chinese fallback render in Black to match Anton. */
@@ -37,8 +43,16 @@ const latinFonts = Promise.all([
   face('JetBrains Mono', 'jetbrains-mono-latin-700-normal.woff2', '700', LATIN),
 ]);
 
+/** Faces fetched on demand (only the character subsets that `text` needs). */
+const ON_DEMAND = [
+  ...['500', '700', '800', '900'].map((w) => `${w} 64px '${CJK}'`),
+  ...['400', '600'].map((w) => `${w} 64px '${CJK_SERIF}'`),
+  `400 64px '${SERIF}'`,
+  `italic 400 64px '${SERIF}'`,
+];
+
 /** Resolves once every font face needed for `text` is ready, so text measurement is exact. */
 export const loadFonts = async (text: string) => {
   await latinFonts;
-  await Promise.all(['500', '700', '800', '900'].map((w) => document.fonts.load(`${w} 64px '${CJK}'`, text)));
+  await Promise.all(ON_DEMAND.map((face) => document.fonts.load(face, text)));
 };

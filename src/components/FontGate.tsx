@@ -1,19 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import {cancelRender, continueRender, delayRender} from 'remotion';
-import {CHANNEL} from '../config';
 import {loadFonts} from '../theme';
 
-/** Holds rendering until every font (including the Chinese glyphs used in the config) is loaded. */
-export const FontGate: React.FC<{children: React.ReactNode}> = ({children}) => {
+/** Holds rendering until every font needed for `text` (including Chinese glyphs) is loaded. */
+export const FontGate: React.FC<{text: string; children: React.ReactNode}> = ({text, children}) => {
   const [handle] = useState(() => delayRender('Loading fonts'));
   const [ready, setReady] = useState(false);
   useEffect(() => {
-    loadFonts(JSON.stringify(CHANNEL))
+    loadFonts(text)
       .then(() => {
         setReady(true);
         continueRender(handle);
       })
       .catch((err) => cancelRender(err));
-  }, [handle]);
+  }, [handle, text]);
   return ready ? <>{children}</> : null;
 };

@@ -1,0 +1,12 @@
+{
+  "bpm": 90,
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "totalBeats": 26,
+  "sections": {
+    "open": [0, 2],
+    "lines": [2, 18],
+    "end": [18, 26]
+  }
+}
