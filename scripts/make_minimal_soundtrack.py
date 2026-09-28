@@ -20,7 +20,11 @@ from synth import (
     fade,
     filt,
     make_ding,
+    make_piano,
     make_reverb_ir,
+    make_shaker,
+    make_soft_kick,
+    make_sub,
     make_subdrop,
     make_supersaw,
     midi,
@@ -28,7 +32,6 @@ from synth import (
     norm,
     rng,
     secs,
-    sine,
     svf,
     write_wav,
 )
@@ -49,46 +52,6 @@ def idx(beat):
 
 
 # ── instruments ──────────────────────────────────────────────────────────────
-
-def make_piano(m, dur=3.2, vel=0.6):
-    """Soft felt piano: slightly inharmonic partials that decay faster the higher they are."""
-    f0 = midi(m)
-    n = secs(dur)
-    t = np.arange(n) / SR
-    x = np.zeros(n)
-    for k in range(1, 10):
-        fk = k * f0 * np.sqrt(1 + 0.00015 * k * k)
-        if fk > SR * 0.45:
-            break
-        amp = vel ** (0.3 + 0.1 * k) / k
-        tau = 2.4 * (261.6 / f0) ** 0.35 / (1 + 0.55 * (k - 1))
-        x += amp * np.sin(2 * np.pi * fk * t + rng.uniform(0, 2 * np.pi)) * np.exp(-t / tau)
-    hammer = norm(filt(noise(n), "band", [300, 2500])) * np.exp(-t / 0.006) * 0.05
-    x = filt((x / (np.max(np.abs(x)) or 1) + hammer) * np.minimum(1, t / 0.004), "low", 2200 + 5000 * vel)
-    return fade(norm(x) * vel, 0.0005, 0.3)
-
-
-def make_soft_kick():
-    n = secs(0.5)
-    t = np.arange(n) / SR
-    x = sine(42 + 38 * np.exp(-t / 0.04), n) * np.exp(-t / 0.22) * np.minimum(1, t / 0.002)
-    return fade(norm(filt(x, "low", 180)), 0.0005, 0.05)
-
-
-def make_shaker():
-    n = secs(0.09)
-    t = np.arange(n) / SR
-    env = np.minimum(1, t / 0.012) * np.exp(-t / 0.03)
-    return fade(norm(filt(noise(n), "band", [5000, 12000]) * env))
-
-
-def make_sub(m, dur):
-    n = secs(dur)
-    t = np.arange(n) / SR
-    f = midi(m)
-    x = sine(f, n) + 0.25 * sine(2 * f, n)
-    return fade(norm(x) * np.minimum(1, t / 0.08), 0.001, 0.4)
-
 
 def make_pen_scratch(dur):
     """Nib on paper: grainy band-passed noise that swells with the stroke's speed."""

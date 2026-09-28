@@ -7,8 +7,10 @@
     "studio": "remotion studio",
     "render": "remotion render ChannelIntro out/channel-intro.mp4",
     "render:minimal": "remotion render MinimalIntro out/minimal-intro.mp4",
+    "render:cinematic": "remotion render CinematicIntro out/cinematic-intro.mp4",
+    "footage": "python3 scripts/fetch_footage.py",
     "still": "remotion still ChannelIntro out/still.png --frame=250",
-    "music": "python3 scripts/make_soundtrack.py && python3 scripts/make_minimal_soundtrack.py",
+    "music": "python3 scripts/make_soundtrack.py && python3 scripts/make_minimal_soundtrack.py && python3 scripts/make_cinematic_soundtrack.py",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

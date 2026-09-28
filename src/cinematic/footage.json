@@ -1,0 +1,215 @@
+{
+  "note": "Footage used by the cinematic intro. `npm run footage` downloads it into public/footage/ (not committed: the stock licenses allow use in your video but not redistribution of the raw clips).",
+  "clips": [
+    {
+      "id": "airglow",
+      "url": "https://images-assets.nasa.gov/video/GSFC_20180124_m12825_ISS_Airglow/GSFC_20180124_m12825_ISS_Airglow~orig.mp4",
+      "start": 14,
+      "duration": 12,
+      "source": "https://images.nasa.gov/details/GSFC_20180124_m12825_ISS_Airglow",
+      "license": "NASA (public domain)"
+    },
+    {
+      "id": "earth-limb",
+      "url": "https://images-assets.nasa.gov/video/jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_%202021_210422-4KMP4/jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_%202021_210422-4KMP4~orig.mp4",
+      "start": 3002,
+      "duration": 12,
+      "source": "https://images.nasa.gov/details/jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_%202021_210422-4KMP4",
+      "license": "NASA (public domain)"
+    },
+    {
+      "id": "earth-desert",
+      "url": "https://images-assets.nasa.gov/video/jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_%202021_210422-4KMP4/jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_%202021_210422-4KMP4~orig.mp4",
+      "start": 1330,
+      "duration": 8,
+      "source": "https://images.nasa.gov/details/jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_%202021_210422-4KMP4",
+      "license": "NASA (public domain)"
+    },
+    {
+      "id": "pen-soul",
+      "url": "https://assets.mixkit.co/videos/50705/50705-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/close-up-calligraphy-of-the-word-soul-50705/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "gothic-alphabet",
+      "url": "https://assets.mixkit.co/videos/50694/50694-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/calligrapher-writing-the-alphabet-in-gothic-style-50694/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "gothic-ab",
+      "url": "https://assets.mixkit.co/videos/50693/50693-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/artist-writing-the-start-of-the-alphabet-in-calligraphy-50693/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "feels-green",
+      "url": "https://assets.mixkit.co/videos/50709/50709-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/close-up-of-calligrapher-adding-details-to-the-word-feels-50709/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "love-red",
+      "url": "https://assets.mixkit.co/videos/50698/50698-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/calligraphy-of-the-word-love-in-cursive-hand-writing-50698/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "happy-orange",
+      "url": "https://assets.mixkit.co/videos/50690/50690-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/the-word-happy-written-in-cursive-calligraphy-style-50690/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "happy-purple",
+      "url": "https://assets.mixkit.co/videos/50696/50696-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/calligraphy-artist-writing-the-word-happy-in-purple-ink-50696/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "typewriter-fox",
+      "url": "https://assets.mixkit.co/videos/10396/10396-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/typewriter-viewed-in-great-detail-when-typing-10396/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "typewriter-blue",
+      "url": "https://assets.mixkit.co/videos/10398/10398-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/blue-typewriter-in-detail-view-10398/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "typewriter-keys",
+      "url": "https://assets.mixkit.co/videos/18288/18288-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/typewriter-in-a-close-shot-when-writing-on-the-sheet-18288/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "book-pages",
+      "url": "https://assets.mixkit.co/videos/42930/42930-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/english-book-pages-42930/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "magnifier",
+      "url": "https://assets.mixkit.co/videos/13807/13807-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/hand-of-a-person-using-a-magnifying-glass-to-read-13807/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "old-books",
+      "url": "https://assets.mixkit.co/videos/21587/21587-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/stacked-and-piled-books-taken-close-up-21587/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "ink-black",
+      "url": "https://assets.mixkit.co/videos/152/152-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/black-ink-underwater-152/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "ink-black-2",
+      "url": "https://assets.mixkit.co/videos/154/154-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/abstract-close-up-of-black-ink-in-water-154/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "ink-bloom",
+      "url": "https://assets.mixkit.co/videos/105/105-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/exploding-ink-underwater-105/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "ink-red",
+      "url": "https://assets.mixkit.co/videos/41999/41999-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/texture-of-red-ink-in-water-on-a-white-background-41999/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "ink-violet",
+      "url": "https://assets.mixkit.co/videos/44821/44821-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/texture-of-colored-ink-flowing-in-a-thick-liquid-44821/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "ink-blue",
+      "url": "https://assets.mixkit.co/videos/229/229-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/ink-swirling-in-blue-tones-underwater-229/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "ink-oval",
+      "url": "https://assets.mixkit.co/videos/492/492-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/expanding-black-ink-forming-oval-492/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "watercolor",
+      "url": "https://assets.mixkit.co/videos/5197/5197-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/hand-of-an-artist-with-a-brush-when-painting-5197/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "paint-green",
+      "url": "https://assets.mixkit.co/videos/40322/40322-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/texture-of-a-brush-painting-40322/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "paint-palette",
+      "url": "https://assets.mixkit.co/videos/41611/41611-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/artist-mixing-paint-on-a-palette-41611/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "paint-blue",
+      "url": "https://assets.mixkit.co/videos/43418/43418-1080.mp4",
+      "source": "https://mixkit.co/free-stock-video/artist-brushing-paint-across-a-canvas-43418/",
+      "license": "Mixkit Stock Video Free License"
+    },
+    {
+      "id": "pen-hello",
+      "url": "https://cdn.coverr.co/videos/coverr-writing-a-note-4875/1080p.mp4",
+      "source": "https://coverr.co/videos/writing-a-note-4dlcikvejd",
+      "license": "Coverr License"
+    },
+    {
+      "id": "pencil-sketch",
+      "url": "https://cdn.coverr.co/videos/coverr-sketching-on-paper-6751/1080p.mp4",
+      "source": "https://coverr.co/videos/sketching-on-paper-txjnez1pf2",
+      "license": "Coverr License"
+    },
+    {
+      "id": "pencil-notebook",
+      "url": "https://cdn.coverr.co/videos/coverr-close-up-of-handwriting-in-notebook/1080p.mp4",
+      "source": "https://coverr.co/videos/close-up-of-handwriting-in-notebook",
+      "license": "Coverr License"
+    },
+    {
+      "id": "pencil-shavings",
+      "url": "https://cdn.coverr.co/videos/coverr-sharpening-a-pencil-6026/1080p.mp4",
+      "source": "https://coverr.co/videos/sharpening-a-pencil-vfyip7wol4",
+      "license": "Coverr License"
+    },
+    {
+      "id": "map",
+      "url": "https://cdn.coverr.co/videos/coverr-moving-finger-across-a-map-6408/1080p.mp4",
+      "source": "https://coverr.co/videos/moving-finger-across-a-map-fbhtbrmh3h",
+      "license": "Coverr License"
+    },
+    {
+      "id": "ripples",
+      "url": "https://cdn.coverr.co/videos/coverr-slow-motion-rippling-water-1418/1080p.mp4",
+      "source": "https://coverr.co/videos/slow-motion-rippling-water-wgvpkoddwh",
+      "license": "Coverr License"
+    },
+    {
+      "id": "drops",
+      "url": "https://cdn.coverr.co/videos/coverr-water-drops-hitting-the-sink-8644/1080p.mp4",
+      "source": "https://coverr.co/videos/water-drops-hitting-the-sink-zg8emwoag6",
+      "license": "Coverr License"
+    }
+  ]
+}

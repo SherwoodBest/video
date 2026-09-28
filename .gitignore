@@ -4,3 +4,4 @@ out/*.png
 out/frames/
 *.log
 __pycache__/
+public/footage/
